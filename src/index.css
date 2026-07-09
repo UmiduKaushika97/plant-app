@@ -10,6 +10,19 @@
     }
 }
 
+@custom-variant group-open {
+&:is(:where(.group):is(.open, [open], :popover-open, :open) *) {
+@slot;
+}
+}
+
+@custom-variant peer-open {
+&:is(:where(.peer):is(.open, [open], :popover-open, :open) ~ *) {
+@slot;
+
+}
+}
+
 /* @layer components {
     .menu-item {
         @apply relative flex h-full items-center p-4 cursor-pointer font-bold text-pink-200 hover:text-zinc-200

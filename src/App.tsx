@@ -2,8 +2,30 @@
 import './App.css';
 import "./index.css";
 import image1 from "./assets/images/logo-inverted.png";
+import image2 from "./assets/images/hero.jpg";
+
+{/* <script>
+  window.onload = () => {
+    const mobilemenuicon = document.getElementById("mobile-menu-button")
+    mobileMenuIcon.addEventListener('click', ()=> {
+    if(mobileMenuIcon.classList.contains("menu")) {
+    mobileMenuIcon.classList.remove(open);
+    }else {
+      mobileMenuIcon.classList.add("open");
+      }
+    });
 
 
+    const ticketsMenuItem = document.getElementById("tickets-menu-item")
+    ticketsMenuItem.addEventListener('click', ()=> {
+    if(ticketsMenuItem .classList.contains("menu")) {
+    ticketsMenuItem.classList.remove(open);
+    }else {
+      ticketsMenuItem.classList.add("open");
+      }
+    });
+  };
+</script> */}
 
 function App() {
 
@@ -23,13 +45,42 @@ function App() {
 
 
     <div className='block md:hidden ml-auto pr-4 my-auto cursor-pointer'>
-      <div>
-      <div className='bg-zinc-200 rounded-full w-8 h-1'></div>
-      <div className='bg-zinc-200 rounded-full w-8 h-1 mt-1'></div>
-      <div className='bg-zinc-200 rounded-full w-8 h-1 mt-1'></div>
-      </div>
+      <button id="mobile-menu-button" className='group peer'>
+      <div className='top-0 rounded-full w-8 h-1 bg-zinc-200 group-open:rotate-45 transition-all group-open:top-2 relative'></div>
+      <div className='transition-all opacity-100 group-open:opacity-0 bg-zinc-200 rounded-full w-8 h-1 mt-1'></div>
+      <div className='top-0 transition-all group-open:rotate-45 bg-zinc-200 rounded-full w-8 h-1 mt-1 group-open:-top-2'></div>
+      </button>
       
        </div>
+
+       <div className='peer-open:block hidden absolute bg-gradient-to-r from-rose-500 to-pink-500 left-0 w-full top-[62px]'>
+       
+       <div className='relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transtion-colors hover:bg-white/10'>
+        <span>Home</span>
+       </div>
+
+        <div className='relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transtion-colors hover:bg-white/10'>
+        <span>Lineup</span>
+       </div>
+
+        <div className='relative h-full cursor-pointer text-pink-200 hover:text-zinc-200 transtion-colors hover:bg-white/10'>
+        <div className='p-4 text-center font-bold'>Tickets</div>
+        <div className='hidden group-open:block '>
+          <div className='relative text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out text-center p-4'>
+            <span>Single day tickets</span>
+          </div>
+
+          <div className='relative text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out text-center p-4'>
+            <span>7 day tickets</span>
+          </div>
+        </div>
+       </div>
+
+       <div className='relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transtion-colors hover:bg-white/10'>
+        <span>supports</span>
+       </div>
+        
+        </div>
 
     <div className='md:flex hidden flex-1 items-center justify-end'>
       <div className='relative flex h-full items-center p-4 cursor-pointer font-bold text-pink-200 hover:text-zinc-200
@@ -37,7 +88,9 @@ function App() {
        <span>Home</span> 
         </div>
 
-        <div className='relative flex h-full items-center p-4 cursor-pointer font-bold text-pink-200 hover:text-zinc-200
+        <div
+        id="ticket-menu-item"
+        className='group relative flex h-full items-center p-4 cursor-pointer font-bold text-pink-200 hover:text-zinc-200
       hover:bg-white/10 transition-colors ease-in-out'>
        <span>Lineup</span> 
         </div>
@@ -74,6 +127,17 @@ function App() {
 
 
       </nav>
+
+
+      <div 
+       style={{
+        backgroundImage: `url(${image2})`,
+        // bg-[url({image2})]
+      }}
+      className='flex flex-col items-center justify-center h-[calc(100vh-200px)] min-h-[400px] bg-cover bg-center bg-fixed'>
+
+      </div>
+
     </header>
    </main>
     </>
