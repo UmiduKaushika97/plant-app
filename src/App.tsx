@@ -3,6 +3,7 @@ import './App.css';
 import "./index.css";
 import image1 from "./assets/images/logo-inverted.png";
 import image2 from "./assets/images/hero.jpg";
+import image3 from "./assets/images/logo.png";
 
 {/* <script>
   window.onload = () => {
@@ -135,7 +136,11 @@ function App() {
         // bg-[url({image2})]
       }}
       className='flex flex-col items-center justify-center h-[calc(100vh-200px)] min-h-[400px] bg-cover bg-center bg-fixed'>
-
+<div className='bg-white/30 py-2 px-4 rounded-xl text-center backdrop-blur-md'>
+      <div className='relative'>
+        <img src={image3} width={175}/>
+      </div>
+</div>
       </div>
 
     </header>
