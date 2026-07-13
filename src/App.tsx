@@ -5,6 +5,14 @@ import image1 from "./assets/images/logo-inverted.png";
 import image2 from "./assets/images/hero.jpg";
 import image3 from "./assets/images/logo.png";
 
+import band1 from "./assets/images/band1.jpg";
+import band2 from "./assets/images/band2.jpg";
+import band3 from "./assets/images/band3.jpg";
+import band4 from "./assets/images/band4.jpg";
+import band5 from "./assets/images/band5.jpg";
+import band6 from "./assets/images/band6.jpg";
+import band7 from "./assets/images/band7.jpg";
+
 {/* <script>
   window.onload = () => {
     const mobilemenuicon = document.getElementById("mobile-menu-button")
@@ -24,6 +32,19 @@ import image3 from "./assets/images/logo.png";
     }else {
       ticketsMenuItem.classList.add("open");
       }
+    });
+
+    const previousButton = document.getElementById("previous");
+    const nextButton = document.getElementById("next");
+    const carousel = document.getElementById("carousel");
+
+    previousButton.addEventListener("click", () => {
+    const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
+    carousel.scrollLeft = carousel.scrollLeft - itemWidth;
+
+    nextButton.addEventListener("click", () => {
+    const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
+    carousel.scrollLeft = carousel.scrollLeft + itemWidth;
     });
   };
 </script> */}
@@ -141,11 +162,11 @@ function App() {
         <img src={image3} width={175} />
         <div className='items-center flex justify-center mt-[-70px] mb-5'>
           <div className='bg-pink-500 w-14 h-14 rounded-full flex items-center justify-center gap-1'>
-              <div className='h-2 w-1 bg-pink-300 rounded-full animate-wavey'></div>
-              <div className='h-3 w-1 bg-pink-200 rounded-full animate-wavey '></div>
-              <div className='h-4 w-1 bg-pink-100 rounded-full animate-wavey '></div>
-              <div className='h-3 w-1 bg-pink-200 rounded-full animate-wavey '></div>
               <div className='h-2 w-1 bg-pink-300 rounded-full animate-wavey '></div>
+              <div className='h-3 w-1 bg-pink-200 rounded-full animate-wavey animation-delay-200'></div>
+              <div className='h-4 w-1 bg-pink-100 rounded-full animate-wavey animation-delay-[1.5s]'></div>
+              <div className='h-3 w-1 bg-pink-200 rounded-full animate-wavey animation-delay-300'></div>
+              <div className='h-2 w-1 bg-pink-300 rounded-full animate-wavey animation-delay-[7.5s]'></div>
             
           </div>
         </div>
@@ -177,6 +198,129 @@ Subscribe
       </div>
 
     </header>
+
+    <div className='max-w-screen-lg mx-auto mt-20'>
+      <h2 className='text-5xl '>Headliners</h2>
+
+      <p>
+        Experince the sonic delight from these made-up artists across 7 days that music
+        fans are calling "one of the many gigs that will happen this year"
+      </p>
+    </div>
+
+<div className='flex '>
+  <div id='previous' className='text-5xl flex justify-center items-center cursor-pointer p-2 
+  relative -top-8'>
+    <i className='fa fa-angle-left '></i>
+  </div>
+  <div>
+    <div id='carousel' className='scroll-smooth flex-1 mt-4 flex w-full gap-4 pb-5 snap-x overflow-x-auto'>
+      <div className='min-w-[80%] md:min-w-[40%]'>
+        <div 
+        style={{
+        backgroundImage: `url(${ band1})`,
+        }}
+
+        className='h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md
+         shadow-black/20 '></div>
+         <h5 className='mt-2'>Corduroy gary</h5>
+         <h6 className='mt-2'>1st july 9pm - main stage</h6>
+      </div>
+
+      <div className='min-w-[80%] md:min-w-[40%]'>
+        <div 
+        style={{
+        backgroundImage: `url(${ band2})`,
+        }}
+
+        className='h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md
+         shadow-black/20 '></div>
+         <h5 className='mt-2'>Corduroy gary</h5>
+         <h6 className='mt-2'>1st july 9pm - main stage</h6>
+      </div>
+
+      <div className='min-w-[80%] md:min-w-[40%]'>
+        <div 
+        style={{
+        backgroundImage: `url(${ band3})`,
+        }}
+
+        className='h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md
+         shadow-black/20 '></div>
+         <h5 className='mt-2'>Corduroy gary</h5>
+         <h6 className='mt-2'>1st july 9pm - main stage</h6>
+      </div>
+
+      <div className='min-w-[80%] md:min-w-[40%]'>
+        <div 
+        style={{
+        backgroundImage: `url(${ band4})`,
+        }}
+
+        className='h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md
+         shadow-black/20 '></div>
+         <h5 className='mt-2'>Corduroy gary</h5>
+         <h6 className='mt-2'>1st july 9pm - main stage</h6>
+      </div>
+
+      <div className='min-w-[80%] md:min-w-[40%]'>
+        <div 
+        style={{
+        backgroundImage: `url(${ band5})`,
+        }}
+
+        className='h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md
+         shadow-black/20 '></div>
+         <h5 className='mt-2'>Corduroy gary</h5>
+         <h6 className='mt-2'>1st july 9pm - main stage</h6>
+      </div>
+
+      <div className='min-w-[80%] md:min-w-[40%]'>
+        <div 
+        style={{
+        backgroundImage: `url(${ band6})`,
+        }}
+
+        className='h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md
+         shadow-black/20 '></div>
+         <h5 className='mt-2'>Corduroy gary</h5>
+         <h6 className='mt-2'>1st july 9pm - main stage</h6>
+      </div>
+
+      <div className='min-w-[80%] md:min-w-[40%]'>
+        <div 
+        style={{
+        backgroundImage: `url(${ band7})`,
+        }}
+
+        className='h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md
+         shadow-black/20 '></div>
+         <h5 className='mt-2'>Corduroy gary</h5>
+         <h6 className='mt-2'>1st july 9pm - main stage</h6>
+      </div>
+
+      {/* <div className='min-w-[80%] md:min-w-[40%]'>
+        <div 
+        style={{
+        backgroundImage: `url(${ band7})`,
+        }}
+
+        className='h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md
+         shadow-black/20 '></div>
+         <h5 className='mt-2'>Corduroy gary</h5>
+         <h6 className='mt-2'>1st july 9pm - main stage</h6>
+      </div> */}
+    </div>
+  </div>
+  <div id='next' className='text-5xl flex justify-center items-center cursor-pointer p-2 
+  relative -top-8'>
+     <i className='fa fa-angle-right '></i>
+  </div>
+</div>
+    
+
+
+
    </main>
     </>
   )

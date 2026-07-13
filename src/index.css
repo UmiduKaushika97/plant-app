@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import "tailwindcss";
+
 @theme {
     --font-quicksand: "Quicksand", serif;
     --animate-wavey: wavy 1s linear infinite;
+    --animation-delay-100: 1s;
+    --animation-delay-200: 2s;
+    --animation-delay-300: 3s;
+    --animation-delay-400: 4s;
+    --animation-delay-500: 5s;
+    --animation-delay-600: 6s;
+    --animation-delay-700: 7s;
+    --animation-delay-800: 8s;
+    --animation-delay-900: 9s;
+    --animation-delay-1000: 10s;
 
     @keyframes wavey {
         0%, 
@@ -15,9 +26,38 @@
     }
 }
 
+@utility animation-delay-*{
+    animation-delay: --value(--animation-delay-*);
+    animation-delay: --value([*])
+}
+
 @layer base {
     body {
         font-family: "Quicksand", serif;
+    }
+
+    h1{
+        @apply text-6xl font-bold;
+    }
+
+    h2{
+        @apply text-5xl font-bold;
+    }
+
+    h3{
+        @apply text-4xl font-bold;
+    }
+
+    h4{
+        @apply text-3xl font-bold;
+    }
+
+    h5{
+        @apply text-2xl font-bold;
+    }
+
+    h6{
+        @apply text-xl font-bold;
     }
 }
 
