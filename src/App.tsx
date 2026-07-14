@@ -1,4 +1,5 @@
-
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import './App.css';
 import "./index.css";
 import image1 from "./assets/images/logo-inverted.png";
@@ -46,6 +47,17 @@ import band7 from "./assets/images/band7.jpg";
     const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
     carousel.scrollLeft = carousel.scrollLeft + itemWidth;
     });
+
+
+
+     const darkModeToggle = document.getElementById("dark-mode-toggle")
+    darkModeToggle.addEventListener('click', ()=> {
+    if(document.body.classList.contains("dark")) {
+    document.body.classList.remove(dark);
+    }else {
+       document.body.classList.add("dark");
+      }
+    });
   };
 </script> */}
 
@@ -53,9 +65,10 @@ function App() {
 
   return (
     <>
-   <main>
-    <header>
-      <nav className='sticky flex top-0 bg-gradient-to-r from-rose-500 to-pink-500 '> 
+    
+   <main className='bg-zinc-200 dark:bg-zinc-900'>
+    <head>
+      <nav className='z-10 sticky flex top-0 bg-gradient-to-r from-rose-500 to-pink-500 '> 
 
     <div className='flex items-center p-2 gap-2'> 
       <img src={image1} width={50}/>
@@ -197,9 +210,27 @@ Subscribe
 </form>
       </div>
 
-    </header>
+    </head>
+   
+      <body className="dark"> </body>
+<div id='dark-mode-toggle' className='fixed top-24 right-0 inline-block w-12 cursor-pointer rounded-l-lg bg-zinc-900 dark:bg-zinc-200
+text-zinc-200 dark:text zinnc-900 p-2 text-3xl'>
+  
+  <button>
+<span className='dark:hidden'>
+  <i className='fa-solid fa-sun'></i>
+   </span>
 
-    <div className='max-w-screen-lg mx-auto mt-20'>
+   <span className='hidden dark:inline'>
+  <i className='fa-solid fa-moon '></i>
+ </span>
+</button>
+</div>
+
+
+
+
+    <div className='max-w-screen-lg mx-auto mt-20 text-zinc-900 dark:text bg-zinc-200'>
       <h2 className='text-5xl '>Headliners</h2>
 
       <p>
@@ -322,6 +353,7 @@ Subscribe
 
 
    </main>
+   
     </>
   )
 }

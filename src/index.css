@@ -74,6 +74,11 @@
 }
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+
 /* @layer components {
     .menu-item {
         @apply relative flex h-full items-center p-4 cursor-pointer font-bold text-pink-200 hover:text-zinc-200
