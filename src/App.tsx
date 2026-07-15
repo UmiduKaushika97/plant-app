@@ -352,6 +352,44 @@ text-zinc-200 dark:text zinnc-900 p-2 text-3xl"
          <h6 className='mt-2'>1st july 9pm - main stage</h6>
       </div> */}
               </div>
+
+                <h2 className="mt-20">Line Up </h2>
+                  <p>Follow the timetable and stage to ensure you don't miss your favourite artist</p>
+                    <div className=" relative mt-5 rounded-lg bg-zinc-800 py-4 px-2 text-zinc-200 ">
+                      <div className="absolute top-0 left-1/2 w-4  -ml-[8px] h-full rounded-full bg-gradient-to-b from-sky-900 via-cyan-900 to-teal-900"></div>
+                    </div>
+
+
+                  <h2 className="mt-20"> Tickets </h2>
+                  <table className="mt-5 table w-full border border-zinc-500 border-collapse">
+                    <thead className="text-lg font-bold">
+                      <td className="border border-zinc-500 p-3">Tickets</td>
+                      <td>Price</td>
+
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td className="border border-zinc-500 py-2 px-3">
+                          Single Day Tickets
+                        </td>
+
+                        <td className="border border-zinc-500 py-2 px-3">$30</td>
+                      </tr>
+
+                      <tr>
+                        <td className="border border-zinc-500 py-2 px-3">7 day tickets</td>
+
+                        <td className="border border-zinc-500 py-2 px-3">$100</td>
+                      </tr>
+                    </tbody>
+
+                    <caption className="caption-bottom">
+                      once they're gone, they're gone!
+                    </caption>
+                  </table>
+
+
             </div>
             <div
               id="next"
