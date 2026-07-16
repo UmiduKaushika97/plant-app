@@ -345,7 +345,7 @@ text-zinc-200 dark:text zinnc-900 p-2 text-3xl"
         style={{
         backgroundImage: `url(${ band7})`,
         }}
-
+        
         className='h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md
          shadow-black/20 '></div>
          <h5 className='mt-2'>Corduroy gary</h5>
@@ -401,6 +401,10 @@ text-zinc-200 dark:text zinnc-900 p-2 text-3xl"
           </div>
         </main>
       </body>
+
+      <div>delete this section</div>
+      <div>delete</div>
+      <h1>must be delete this section</h1>
     </>
   );
 }
