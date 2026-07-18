@@ -406,6 +406,7 @@ text-zinc-200 dark:text zinnc-900 p-2 text-3xl"
       <div>delete</div>
       <h1>must be delete this section</h1>
       <div>add section</div>
+      <div>section 2</div>
     </>
   );
 }
