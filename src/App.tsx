@@ -229,12 +229,17 @@ transition-colors hover:bg-sky-900 hover:shadow-lg hover:shadow-black/20"
           {/* <body className="dark"> </body> */}
           <div
             id="dark-mode-toggle"
-            className="fixed top-24 right-0 inline-block w-12 cursor-pointer rounded-l-lg bg-zinc-900 dark:bg-zinc-200
+            className="z-10 fixed top-24 right-0 inline-block w-12 cursor-pointer rounded-l-lg bg-zinc-900 dark:bg-zinc-200
 text-zinc-200 dark:text zinnc-900 p-2 text-3xl"
           ></div>
 
           <div className="max-w-screen-lg mx-auto mt-20 text-zinc-900 dark:text bg-zinc-200">
-            <h2 className="text-5xl ">Headliners</h2>
+
+            <h2>
+              <span className="text-transparent bg-gradient-to-r from-cyan-500 via-green-500 to-pink-500 bg-clip-text">
+              Headliners
+              </span>
+              </h2>
 
             <p>
               Experince the sonic delight from these made-up artists across 7
@@ -356,7 +361,58 @@ text-zinc-200 dark:text zinnc-900 p-2 text-3xl"
                 <h2 className="mt-20">Line Up </h2>
                   <p>Follow the timetable and stage to ensure you don't miss your favourite artist</p>
                     <div className=" relative mt-5 rounded-lg bg-zinc-800 py-4 px-2 text-zinc-200 ">
-                      <div className="absolute top-0 left-1/2 w-4  -ml-[8px] h-full rounded-full bg-gradient-to-b from-sky-900 via-cyan-900 to-teal-900"></div>
+                      <div className="absolute top-0 left-1/2 w-4  -ml-[8px] h-full rounded-full bg-gradient-to-b from-sky-900 via-cyan-900 to-teal-900">
+
+                      <div className="sticky top-1/2 ">
+                      <div className="relative size-4 ">
+                        <div className=" absolute size-4 animate-ping rounded-full bg-pink-500 opacity-75"></div>
+                        <div className="bg-rose-500 rounded-full relative h-4 w-4"></div>
+                      </div>
+                      </div>
+
+                      </div>
+                      <div className="grid grid-cols-2 gap-8">
+                        <div>
+                          <h4 className="my-4 rounded-lg bg-zinc-900 p-2">
+                            1st july
+                          </h4>
+                          </div>
+                          <div></div>
+
+                          <div className="text-right">
+                            <div className="font-bold">jackie chston</div>
+                            <div className="text-zinc-400">6pm - sage stage</div>
+                          </div>
+
+                          <div></div>
+                          <div></div>
+
+                          <div>
+                            <div className="font-bold">jackie chston</div>
+                            <div className="text-zinc-400">6pm - sage stage</div>
+                          </div>
+
+                         <div>
+                          <h4 className="my-4 rounded-lg bg-zinc-900 p-2">
+                            1st july
+                          </h4>
+                          </div>
+                          <div></div>
+
+                          <div className="text-right">
+                            <div className="font-bold">jackie chston</div>
+                            <div className="text-zinc-400">6pm - sage stage</div>
+                          </div>
+
+                          <div></div>
+                          <div></div>
+
+                          <div>
+                            <div className="font-bold">jackie chston</div>
+                            <div className="text-zinc-400">6pm - sage stage</div>
+                          </div>
+
+                      </div>
                     </div>
 
 
@@ -402,11 +458,7 @@ text-zinc-200 dark:text zinnc-900 p-2 text-3xl"
         </main>
       </body>
 
-      <div>delete this section</div>
-      <div>delete</div>
-      <h1>must be delete this section</h1>
-      <div>add section</div>
-      <div>section 2</div>
+    
     </>
   );
 }
